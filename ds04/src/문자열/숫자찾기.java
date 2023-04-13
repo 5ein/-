@@ -13,9 +13,23 @@ public class 숫자찾기 {
 }
 class Solution2 {
     public int solution(int num, int k) {
-        int answer = 0;
-
         
-        return answer;
+        //1. .valueOf() 이용
+//    	int answer = 0;
+//        String num2 = String.valueOf(num);
+//        String k2 = String.valueOf(k);
+//        
+//        if (num2.contains(k2)) {
+//			answer = num2.indexOf(k2) + 1;
+//		}else {
+//			answer = -1;
+//		}
+//        return answer;
+        
+        //2. .toString() , 삼항연산자 이용
+        int answer = Integer.toString(num).indexOf(Integer.toString(k));
+        return (answer == -1) ? -1 : (answer + 1);
+        //indexOf는 입력값이 문자열에 없다면 리턴값이 -1이다!!!
+        
     }
 }

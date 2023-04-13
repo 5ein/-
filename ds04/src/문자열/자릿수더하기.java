@@ -14,6 +14,20 @@ class Solution3 {
     public int solution(int n) {
         int answer = 0;
         
+        //방법1)
+//        String s = Integer.toString(n);
+//        String[] ss = s.split("");
+//        
+//        for (int i = 0; i < ss.length; i++) {
+//			answer = answer + Integer.parseInt(ss[i]);
+//		}
+        
+        //방법2) 10으로 나눠주면서 뒤 자리수부터 더해줌
+        while(n > 0) {
+        	answer += n % 10;
+        	n /= 10;
+        }
+        
         return answer;
     }
 }

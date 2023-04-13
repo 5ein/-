@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class 문자열길이배열로리턴2 {
 	
+	//프로그래머스 배열 원소의 길이 문제
 	public static void main(String[] args) {
 		String[] strlist = {"I", "Love", "Programmers."};
 		
