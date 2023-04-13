@@ -13,7 +13,7 @@ public class 스트링비교 {
 		// String이 가르키는 char들이 동일한지 equals()
 		System.out.println(s.equals(s2));
 
-		// String에 들어가있는 주소가 동일한지 비교 ==
+		// String이 들어가있는 주소가 동일한지 비교 ==
 		System.out.println(s == s2); // 왜 true가 나올까?
 
 		// 값을 바꾸고 또다시 비교해보기
